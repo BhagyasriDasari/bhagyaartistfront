@@ -1,70 +1,93 @@
-# Getting Started with Create React App
+# Transactions Management System
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Overview
 
-## Available Scripts
+This project is a web application for managing daily transactions. The system allows users to track and manage their debit and credit transactions, providing a comprehensive view of their financial activities. The application is built using React.js for the frontend and Node.js with SQLite for the backend.
 
-In the project directory, you can run:
+## Features
 
-### `npm start`
+- **Add Transaction**: Easily add new debit and credit transactions with details such as date, amount, and description.
+- **View Transactions**: Display a list of all transactions with the ability to filter by date, type, and other criteria.
+- **Transaction Details**: View detailed information about each transaction, including the remaining balance after each transaction.
+- **Edit and Delete Transactions**: Modify or remove existing transactions as needed.
+- **Responsive Design**: Fully responsive design that works on various devices.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Technologies Used
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- **React.js**: For building the user interface.
+- **React Router**: For navigation between different components.
+- **Axios**: For making API requests to the backend service.
+- **CSS Modules**: For component-level styling.
+- **Node.js**: For backend services.
+- **Express.js**: For building the backend API.
+- **SQLite**: For database management.
 
-### `npm test`
+## Getting Started
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Prerequisites
 
-### `npm run build`
+Make sure you have the following installed:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- [Node.js](https://nodejs.org/en/download/)
+- [npm](https://www.npmjs.com/get-npm)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Installation
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+1. Clone the repository:
 
-### `npm run eject`
+    ```sh
+    git clone <remote-repo-url>
+    cd transactions-frontend
+    ```
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+2. Install dependencies:
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+    ```sh
+    npm install
+    ```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+3. Navigate to the backend directory and install backend dependencies:
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+    ```sh
+    cd ../backend
+    npm install
+    ```
 
-## Learn More
+### Running the Application
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+#### Start the Backend
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+1. Navigate to the backend directory:
 
-### Code Splitting
+    ```sh
+    cd backend
+    ```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+2. Start the backend server:
 
-### Analyzing the Bundle Size
+    ```sh
+    npm start
+    ```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+#### Start the Frontend
 
-### Making a Progressive Web App
+1. Navigate to the frontend directory:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+    ```sh
+    cd ../transactions
+    ```
 
-### Advanced Configuration
+2. Start the frontend application:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+    ```sh
+    npm start
+    ```
 
-### Deployment
+The application will be available at `http://localhost:3000`.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+### Building for Production
 
-### `npm run build` fails to minify
+To build the frontend application for production, run:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+```sh
+npm run build
