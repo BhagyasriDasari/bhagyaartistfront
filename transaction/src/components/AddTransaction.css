@@ -1,0 +1,45 @@
+/* src/components/AddTransaction.css */
+
+.add-transaction {
+    margin: 20px auto;
+    max-width: 600px;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .add-transaction h2 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .add-transaction form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .add-transaction form label {
+    margin: 10px 0 5px;
+  }
+  
+  .add-transaction form input {
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .add-transaction form button {
+    padding: 10px;
+    background: #28a745;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .add-transaction form button:hover {
+    background: #218838;
+  }
+  

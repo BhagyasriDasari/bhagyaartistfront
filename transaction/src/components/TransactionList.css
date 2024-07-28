@@ -1,0 +1,46 @@
+/* src/components/TransactionList.css */
+
+.transaction-list {
+    margin: 20px auto;
+    max-width: 800px;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .transaction-list h2 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .transaction-list table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+  }
+  
+  .transaction-list table th,
+  .transaction-list table td {
+    padding: 12px;
+    border: 1px solid #ddd;
+    text-align: left;
+  }
+  
+  .transaction-list table th {
+    background: #f4f4f4;
+  }
+  
+  .transaction-list .add-transaction-link {
+    display: inline-block;
+    padding: 10px 20px;
+    background: white;
+    color: black;
+    text-decoration: none;
+    border-radius: 4px;
+  }
+  
+  .transaction-list .add-transaction-link:hover {
+    background: white;
+  }
+  
